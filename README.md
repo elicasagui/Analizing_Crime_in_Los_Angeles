@@ -67,7 +67,7 @@ mv ~/Downloads/crimes.csv data/</code></pre>
   <ol class="steps">
     <li><strong>Clone the repository:</strong>
       <pre><code>git clone https://github.com/elicasagui/Analizing_Crime_in_Los_Angeles.git
-cd Crime_in_Los_Angeles</code></pre>
+cd Analizing_Crime_in_Los_Angeles</code></pre>
     </li>
     <li><strong>Create and activate a virtual environment:</strong>
       <pre><code>python -m venv venv</code></pre>
