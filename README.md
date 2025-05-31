@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crime in Los Angeles – Exploratory Data Analysis</title>
+</head>
 <body>
   <h1>Crime in Los Angeles – Exploratory Data Analysis</h1>
 
@@ -64,6 +69,18 @@ mv ~/Downloads/crimes.csv data/</code></pre>
     <li><code>LOCATION</code> – Geographic point (latitude, longitude)</li>
   </ul>
 
+  <h2>Descargar el CSV de Crímenes</h2>
+  <ol>
+    <li>Activa tu entorno virtual:</li>
+    <pre><code>python -m venv venv</code></pre>
+    <p>Abre PowerShell como Administrador y ejecuta:</p>
+    <pre><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+    .\venv\Scripts\Activate</code></pre>
+    <li>Ejecuta el script para descargar el CSV desde Google Drive:</li>
+    <pre><code>python src/download_data.py</code></pre>
+    <li>Ahora el archivo <code>data/crimes.csv</code> estará disponible para el análisis.</li>
+  </ol>
+
   <h2>Installation Steps</h2>
   <ol class="steps">
     <li><strong>Clone the repository:</strong>
@@ -73,7 +90,11 @@ cd Crime_in_Los_Angeles</code></pre>
     <li><strong>Create and activate a virtual environment:</strong>
       <pre><code>python -m venv venv</code></pre>
       <p><em>On Windows:</em></p>
-      <pre><code>.\venv\Scripts\Activate</code></pre>
+      <pre><code>Open PowerShell as Administrator and run:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate</code></pre>
+
       <p><em>On macOS/Linux:</em></p>
       <pre><code>source venv/bin/activate</code></pre>
     </li>
@@ -96,8 +117,12 @@ python -m pip install -r requirements.txt
   <p>To explore crime data interactively, launch the Streamlit app:</p>
   <ol class="steps">
     <li><strong>Activate your virtual environment</strong> (if not already active):<br>
-      <pre><code>source venv/bin/activate    # macOS/Linux
-.\venv\Scripts\Activate         # Windows PowerShell</code></pre>
+      <pre><code>On Windows (PowerShell as Administrator):
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate
+
+On macOS/Linux:
+source venv/bin/activate</code></pre>
     </li>
     <li><strong>Run the Streamlit app:</strong><br>
       <pre><code>streamlit run src/dashboard.py</code></pre>
@@ -191,3 +216,5 @@ pytest tests/</code></pre>
   </p>
 </body>
 </html>
+
+
