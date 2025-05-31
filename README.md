@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Crime in Los Angeles – Exploratory Data Analysis</title>
-</head>
+
 <body>
   <h1>Crime in Los Angeles – Exploratory Data Analysis</h1>
 
