@@ -5,3 +5,4 @@ seaborn
 jupyter
 pytest
 streamlit
+streamlit-folium
