@@ -108,13 +108,9 @@ python -m pip install -r requirements.txt
   <h2>Streamlit Dashboard</h2>
   <p>To explore crime data interactively, launch the Streamlit app:</p>
   <ol class="steps">
-    <li><strong>Activate your virtual environment</strong> (if not already active):<br>
-      <pre><code>On Windows (PowerShell as Administrator):
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\venv\Scripts\Activate
-
-On macOS/Linux:
-source venv/bin/activate</code></pre>
+    <li><strong>Activate your virtual environment (Windows PowerShell):</strong><br>
+      <pre><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate</code></pre>
     </li>
     <li><strong>Run the Streamlit app:</strong><br>
       <pre><code>streamlit run src/dashboard.py</code></pre>
