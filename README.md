@@ -1,4 +1,3 @@
-
 <body>
   <h1>Crime in Los Angeles – Exploratory Data Analysis</h1>
 
@@ -64,18 +63,6 @@ mv ~/Downloads/crimes.csv data/</code></pre>
     <li><code>LOCATION</code> – Geographic point (latitude, longitude)</li>
   </ul>
 
-  <h2>Descargar el CSV de Crímenes</h2>
-  <ol>
-    <li>Activa tu entorno virtual:</li>
-    <pre><code>python -m venv venv</code></pre>
-    <p>Abre PowerShell como Administrador y ejecuta:</p>
-    <pre><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    .\venv\Scripts\Activate</code></pre>
-    <li>Ejecuta el script para descargar el CSV desde Google Drive:</li>
-    <pre><code>python src/download_data.py</code></pre>
-    <li>Ahora el archivo <code>data/crimes.csv</code> estará disponible para el análisis.</li>
-  </ol>
-
   <h2>Installation Steps</h2>
   <ol class="steps">
     <li><strong>Clone the repository:</strong>
@@ -85,11 +72,9 @@ cd Crime_in_Los_Angeles</code></pre>
     <li><strong>Create and activate a virtual environment:</strong>
       <pre><code>python -m venv venv</code></pre>
       <p><em>On Windows:</em></p>
-      <pre><code>Open PowerShell as Administrator and run:
-
+ <pre><code>
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate</code></pre>
-
       <p><em>On macOS/Linux:</em></p>
       <pre><code>source venv/bin/activate</code></pre>
     </li>
@@ -97,6 +82,18 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
       <pre><code>python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
       </code></pre>
+    </li>
+    <li><strong>Download the CSV of Crimes:</strong>
+      <ol>
+        <li>Activa tu entorno virtual:</li>
+        <pre><code>python -m venv venv</code></pre>
+        <p>Abre PowerShell como Administrador y ejecuta:</p>
+        <pre><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+        .\venv\Scripts\Activate</code></pre>
+        <li>Ejecuta el script para descargar el CSV desde Google Drive:</li>
+        <pre><code>python src/download_data.py</code></pre>
+        <li>Ahora el archivo <code>data/crimes.csv</code> estará disponible para el análisis.</li>
+      </ol>
     </li>
     <li><strong>Run main analysis script:</strong>
       <pre><code>python main.py</code></pre>
@@ -154,7 +151,7 @@ source venv/bin/activate</code></pre>
     </tr>
     <tr>
       <td>1</td>
-      <td>Neighborhoods with highest overall crime density</td>
+      <td>Neighborhoods with highest overall crime density</li>
       <td>
         <div class="image-container">
           <img src="notebooks/images/top_crime_neighborhoods.png" alt="Top Crime Neighborhoods">
@@ -163,7 +160,7 @@ source venv/bin/activate</code></pre>
     </tr>
     <tr>
       <td>2</td>
-      <td>Yearly trend showing a spike in theft-related incidents in 2021</td>
+      <td>Yearly trend showing a spike in theft-related incidents in 2021</li>
       <td>
         <div class="image-container">
           <img src="notebooks/images/theft_spike_2021.png" alt="Theft Spike 2021">
@@ -172,7 +169,7 @@ source venv/bin/activate</code></pre>
     </tr>
     <tr>
       <td>3</td>
-      <td>Heatmap of violent crimes concentrated in central LA districts</td>
+      <td>Heatmap of violent crimes concentrated in central LA districts</li>
       <td>
         <div class="image-container">
           <img src="notebooks/images/violent_crime_heatmap.png" alt="Violent Crime Heatmap">
@@ -211,5 +208,4 @@ pytest tests/</code></pre>
   </p>
 </body>
 </html>
-
 
